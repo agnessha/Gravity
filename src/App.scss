@@ -1,0 +1,98 @@
+body{
+  font-family: 'Fira Sans', sans-serif;
+  color: #222222;
+  font-weight: 400;
+}
+
+button {
+  display: block!important;
+  background: none;
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #151515;
+  font-weight: 700;
+}
+a{
+  text-decoration: none !important;
+  outline: none;
+}
+
+.nav{
+  padding-top: 59px;
+}
+
+
+.offer{
+  & .nav{
+    padding-top: 128px;
+  }
+
+  &__cont{
+
+    &-title{
+      font-size: 60px;
+      font-weight: 700;
+      letter-spacing: -0.045em;
+      line-height: 70px;
+    }
+    &-text{
+      font-size: 18px;
+      color: #616161;
+      margin: 30px 0 56px ;
+    }
+    &-btn{
+      background-color: #4737FF;
+      padding: 17px 25px;
+      font-weight: 500;
+      color: white;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.4em;
+      &:hover{
+        color: white;
+        background-color: #3529BF;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.be-static{
+  position: static!important;
+}
+.vh-dependent{
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
+.hero{
+  background: url("img/Placeholder-1.png") no-repeat right top;
+  background-size: 85% 100%;
+  width: 50%;
+  height: 85%;
+  position: absolute;
+  right: 0;
+  top: 144px;
+  align-items: center;
+
+}
+
+.video{
+  background: url("img/video.jpg") left bottom;
+  position: absolute;
+  width: 40%;
+  height: 35%;
+  bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:after{
+    content: "";
+    background: url("img/Play Button Primary-1.png");
+    width: 65px;
+    height: 65px;
+    display: block;
+    background-size: 100% 100%;
+  }
+}

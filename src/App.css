@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Fira Sans", sans-serif;
+  color: #222222;
+  font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  display: block !important;
+  background: none;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2, h3, h4, h5, h6 {
+  color: #151515;
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a {
+  text-decoration: none !important;
+  outline: none;
+}
+
+.nav {
+  padding-top: 59px;
+}
+
+.offer .nav {
+  padding-top: 128px;
+}
+.offer__cont-title {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 70px;
+}
+.offer__cont-text {
+  font-size: 18px;
+  color: #616161;
+  margin: 30px 0 56px;
+}
+.offer__cont-btn {
+  background-color: #4737FF;
+  padding: 17px 25px;
+  font-weight: 500;
   color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+}
+.offer__cont-btn:hover {
+  color: white;
+  background-color: #3529BF;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.be-static {
+  position: static !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.vh-dependent {
+  height: 40vh;
+  display: flex;
+  align-items: center;
 }
+
+.hero {
+  background: url("img/Placeholder-1.png") no-repeat right top;
+  background-size: 85% 100%;
+  width: 50%;
+  height: 85%;
+  position: absolute;
+  right: 0;
+  top: 144px;
+  align-items: center;
+}
+
+.video {
+  background: url("img/video.jpg") left bottom;
+  position: absolute;
+  width: 40%;
+  height: 35%;
+  bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video:after {
+  content: "";
+  background: url("img/Play Button Primary-1.png");
+  width: 65px;
+  height: 65px;
+  display: block;
+  background-size: 100% 100%;
+}
+
+/*# sourceMappingURL=App.css.map */
