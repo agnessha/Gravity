@@ -3,30 +3,45 @@ import logo from '../img/Logo.png'
 import searchIcon from '../img/Search Icon.png'
 import menuIcon from '../img/Menu Icon.png'
 import { Container, Row, Col } from 'react-bootstrap'
+import MediaQuery from 'react-responsive'
 
 
-export const Header = props => {
+const Header = props => {
 
 
     return (
         <header className="header">
             <div className="nav">
                 <Container>
-                    <Row>
-                        <Col md={4}>
-                            <img src={logo} alt="logo"/>
-                        </Col>
+                    <div className="big-screen">
+                            <Row>
+                            <Col md={4}>
+                                <img className="logo" src={logo} alt="logo"/>
+                            </Col>
                         <Col md={{span: 3, offset: 2}}>
                             <button className="btn">
                             <img src={searchIcon} alt="search icon"/>
                             </button>
                         </Col>
-                        <Col md={3}>
-                            <button className="btn ms-auto">
-                            <img src={menuIcon} alt="menu icon"/>
-                            </button>
-                        </Col>
-                    </Row>
+                            <Col md={3}>
+                                <button className="btn ms-auto">
+                                    <img src={menuIcon} alt="menu icon"/>
+                                </button>
+                            </Col>
+                            </Row>
+                    </div>
+                    <div className="small-screen">
+                         <Row>
+                            <Col ms={6}>
+                                <img className="logo" src={logo} alt="logo"/>
+                            </Col>
+                            <Col ms={6}>
+                                <button className="btn ms-auto">
+                                    <img src={menuIcon} alt="menu icon"/>
+                                </button>
+                            </Col>
+                            </Row>
+                    </div>
                 </Container>
             </div>
             <div className="offer">
@@ -41,7 +56,7 @@ export const Header = props => {
                                         <p className="offer__cont-text">
                                             From ads that dance or sing to MTV-like commercials, online advertisers are now using a new type of technology “rich media” to attract consumers.
                                         </p>
-                                        <a className="offer__cont-btn">
+                                        <a className="offer__cont-btn blue-btn">
                                             get started
                                         </a>
                                 </div>
@@ -60,3 +75,5 @@ export const Header = props => {
         </header>
     )
 }
+
+export default Header;
