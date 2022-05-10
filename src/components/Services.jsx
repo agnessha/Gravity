@@ -1,18 +1,11 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import SliderCom from "./Slider";
-import Slider from "react-slick";
+import SimpleSlider from "./Slick";
+import SlickSlider from "./Slick";
 
 
 export const Services = (props) => {
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    };
 
     return (
         <section className="services">
@@ -66,8 +59,7 @@ export const Services = (props) => {
                 <Container>
                     <Row>
                         <Col md={12}>
-                            {/*<SliderCom />*/}
-
+                            <SlickSlider/>
                         </Col>
                     </Row>
 
